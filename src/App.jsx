@@ -1,6 +1,6 @@
-import {useState, useEffect} from 'react'
-import Header from "./components/Header"
+import { useState, useEffect } from 'react'
 import Guitar from "./components/Guitar"
+import Header from "./components/Header"
 import { db } from './data/db'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   }
 
   const [data] = useState(db)
-  const [cart, setCart] = useState([initialCart])
+  const [cart, setCart] = useState(initialCart)
 
   const MIN_ITEMS = 1
   const MAX_ITEMS = 5
